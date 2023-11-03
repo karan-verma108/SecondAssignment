@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playpen+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background: radial-gradient(brown, rgb(233, 79, 79));
+    justify-content: space-between;
+    height: 52px;
+    align-items: center;
+}
+
+.firstDiv {
+    font-size: 2rem;
+    padding-left: 1%;
+    color: white;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.secondDiv {
+    display: flex;
+    height: 39px;
+    width: 14%;
+    justify-content: center;
+    gap: 5%;
+}
+
+.secondDiv img {
+    height: 100%;
+}
+
+#search {
+    height: 450px;
+    width: 100%;
+}
+
+#search::before {
+    content: '';
+    position: absolute;
+    height: 450px;
+    width: 100%;
+    background: url('https://assets.gqindia.com/photos/628fb414814fa26c98dbfada/master/pass/Lebanese%20cuisine.jpg') center;
+    z-index: 0;
+    opacity: 0.9;
+}
+
+.floatingLogo {
+    height: 17%;
+    background-color: white;
+    width: 5.5%;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 81%;
+    position: relative;
+    top: 6%;
+    animation: revolve 10s infinite;
+}
+
+@keyframes revolve {
+    0% {
+        margin-left: 4%;
+        transform: rotate(30deg);
+    }
+
+    20% {
+        margin-left: 20%;
+        transform: rotate(60deg);
+    }
+
+    35% {
+        margin-left: 40%;
+        transform: rotate(90deg);
+    }
+
+    55% {
+        margin-left: 60%;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        margin-left: 80%;
+        transform: rotate(270deg);
+    }
+
+    90% {
+        margin-left: 60%;
+        transform: rotate(300deg);
+    }
+
+    100% {
+        margin-left: 10%;
+        transform: rotate(360deg);
+    }
+
+}
+
+.searchInfo {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    position: relative;
+    color: white;
+    text-shadow: 0 0 6px black;
+}
+
+.selectDiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 0.6%;
+    padding-top: 2%;
+}
+
+.selectMove {
+    font-size: 1.6rem;
+    width: 30vw;
+    padding: 0.6%;
+}
+
+#city {
+    padding-left: 6%;
+}
+
+#restaurant {
+    padding-left: 4%;
+}
+
+#quickSearch {
+    background: linear-gradient(160deg, rgb(179, 170, 229), rgb(230, 132, 117), rgb(215, 215, 118));
+    height: 600px;
+}
+
+.quickContain {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+.insideQuickOne {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.insideQuickTwo {
+    font-size: 1.3rem;
+}
+
+.itemsContainer {
+    padding-top: 2%;
+    width: 80%;
+    height: 57vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    justify-content: center;
+}
+
+
+.items {
+    width: 354px;
+    height: 175px;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    margin-bottom: 0.6%;
+}
+
+.imgDiv {
+    width: 50%;
+}
+
+.imgDiv img {
+    width: 100%;
+    height: 100%;
+}
+
+.infoDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    width: 50%;
+    padding: 30px 12px;
+    position: relative;
+    left: 3%;
+}
+
+.itemHeading {
+    color: blueviolet;
+}
+
+.itemInfo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer {
+    background: radial-gradient(brown, rgb(234, 128, 128));
+    color: white;
+    font-family: 'Playpen Sans', cursive;
+}
+
+#footerHeading {
+    text-align: center;
+    font-size: 20px;
+    padding: 0.5% 0;
+
+
+}
+
+.footerContent {
+    display: inline-block;
+    border-right: 2px solid white;
+    width: 32.9%;
+    height: 40px;
+    font-family: 'Playpen Sans', cursive;
+    text-align: center;
+    padding-top: 1%;
+
+}
+
+.noBorder {
+    border: none;
+}
+
+.footImg {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.footImg img {
+    width: 32px;
+    height: 32px;
+    filter: invert();
+}
+
+.footImg img:hover {
+    transform: scale(1.2);
+
+}
+
+@media screen and (max-width:1392px) {
+    #quickSearch {
+        height: 750px;
+    }
+}
+
+@media screen and (max-width:1310px) {
+    #restaurant {
+        padding-left: 2.5%;
+    }
+
+}
+
+@media screen and (max-width:1280px) {
+    .floatingLogo {
+        height: 16%;
+        font-size: 3.5rem;
+    }
+
+}
+
+@media screen and (max-width:1166px) {
+    #restaurant {
+        padding-left: 4.5%;
+    }
+
+    .selectMove {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .floatingLogo {
+        height: 15%;
+        width: 6.5%;
+    }
+}
+
+@media screen and (max-width:1035px) {
+    #restaurant {
+        padding-left: 2.5%;
+    }
+
+}
+
+@media screen and (max-width:1010px) {
+    .footerContent {
+        width: 31.9%;
+    }
+
+}
+
+@media screen and (max-width:990px) {
+    #quickSearch {
+        height: 1280px;
+    }
+
+}
+
+@media screen and (max-width:917px) {
+    .selectMove {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:906px) {
+    .selectDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .selectMove {
+        width: 44vw;
+    }
+
+    #city {
+        padding-left: 11%;
+    }
+
+    #restaurant {
+        padding-left: 10%;
+    }
+
+}
+
+@media screen and (max-width: 874px) {
+    .floatingLogo {
+        height: 13%;
+        width: 7.5%;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:835px) {
+    .selectDiv {
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width: 906px) {
+    #restaurant {
+        padding-left: 8%;
+    }
+}
+
+@media screen and (max-width:699px) {
+    .searchInfo {
+        font-size: 3.5rem;
+    }
+
+}
+
+@media screen and (max-width: 688px) {
+    .floatingLogo {
+        height: 13%;
+        width: 9%;
+    }
+}
+
+@media screen and (max-width:611px) {
+    .searchInfo {
+        font-size: 3rem;
+    }
+
+}
+
+
+@media screen and (max-width:604px) {
+    .selectDiv {
+        margin-top: 14%;
+    }
+}
+
+@media screen and (max-width: 906px) {
+    #restaurant {
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .selectMove {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .floatingLogo {
+        width: 11%;
+    }
+}
+
+@media screen and (max-width: 549px) {
+
+    #city {
+        padding-left: 7%;
+    }
+
+    #restaurant {
+        padding-left: 3%;
+    }
+}
+
+
+@media screen and (max-width:524px) {
+    .searchInfo {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 465px) {
+    .selectMove {
+        width: 74vw;
+    }
+
+
+    #city {
+        padding-left: 18%;
+    }
+
+    #restaurant {
+        padding-left: 14%;
+    }
+}
+
+@media screen and (max-width:436px) {
+    .searchInfo {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 435px) {
+    .floatingLogo {
+        width: 15%;
+    }
+}
+
+
+@media screen and (max-width:390px) {
+    .selectDiv {
+        margin-top: 29%;
+    }
+}
+
+@media screen and (max-width:364px) {
+    .itemInfo {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:360px) {
+    .firstDiv {
+        display: flex;
+        justify-content: center;
+    }
+
+    .secondDiv {
+        display: none;
+    }
+
+    .selectMove {
+        width: 100vw;
+    }
+
+    #city {
+        padding-left: 28%;
+    }
+
+    #restaurant {
+        padding-left: 21%;
+    }
+
+
+}
+
+@media screen and (max-width: 339px) {
+    .floatingLogo {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:311px) {
+    .footImg img {
+        width: 21px;
+        height: 21px;
+    }
+
+    .footerContent {
+        font-size: 11px;
+        width: 28.9%;
+    }
+
+
+    @media screen and (max-width:292px) {
+
+        #city {
+            padding-left: 22%;
+        }
+
+        #restaurant {
+            padding-left: 15%;
+        }
+
+
+    }
+
+    @media screen and (max-width: 249px) {
+        .floatingLogo {
+            width: 25%;
+            font-size: 2.7rem;
+        }
+    }
+
+    @media screen and (max-width:238px) {
+        .firstDiv {
+            font-size: 1.5rem;
+        }
+
+    }
+
+    @media screen and (max-width: 185px) {
+        .floatingLogo {
+            width: 17%;
+            font-size: 1.2rem;
+            height: 7%;
+        }
+    }
