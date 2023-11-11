@@ -483,12 +483,18 @@ header {
         padding-left: 21%;
     }
 
-
+    .itemsContainer{
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 339px) {
     .floatingLogo {
         width: 20%;
+    }
+
+    .itemHeading{
+        font-size: 1rem;
     }
 }
 
@@ -522,6 +528,12 @@ header {
         .floatingLogo {
             width: 25%;
             font-size: 2.7rem;
+        }
+
+        .selectMove {
+            width: 79vw;
+            padding: 0 32px 0 0;
+            font-size: 0.7rem !important;
         }
     }
 
